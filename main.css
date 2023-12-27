@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+} 
+
+body,button
+{
+    font-family:Poppins;
+}
+/* background-image: linear-gradient(to bottom right, red , blue); */
+
+
+   /* .nav-container{
+    width: 100%; 
+    height: 70vh; 
+    background-position: 100%;
+    background-repeat: no-repeat;
+   background-size:cover;
+   background:linear-gradient();
+   background-attachment: fixed;
+  background-image:linear-gradient(transparent,#170505dc), url(./background\ img/img1.png);
+   
+} */
+
+
+
+.nav-container{
+    width: 100%;
+    height: 70vh;
+    background-position: 100%;
+    background-repeat: no-repeat;
+   background-size:cover;
+   /* Removed the redundant background property */
+   background-attachment: fixed;  
+   background-image: linear-gradient(to left right,#dc0d0df3), url(C:\Users\sanch\OneDrive\Desktop\registration-form\Desktop\iframe\FSD\HTML-CSS-Project\img1.png); /* Fixed the space in the URL */
+   opacity: 1;
+}
+/* Please correct your image directory sanchi or else it will not wor */
+
+.nav-blend{
+    background: transparent linear-gradient(180deg, #9D0E0E00 0%, var(--clr-accent-2) 100%) 0% 0% no-repeat padding-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-btns{
+    display: none;
+    padding-top: 1rem;
+    --max-width: 1300px;
+    --pading: 2rem;
+    width: min(var(--max-width), 100% - var(--pading));
+    text-align: right;
+}
+    @media (min-width:50em) {
+     .nav-blend{
+        justify-content: unset;
+     }
+        .nav-btns{
+        display: block;
+     }
+    }
+.login, .createA{
+  background-color: transparent;
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-nav-btn);
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.login{
+  border: 0;
+  color: white;
+  border: none;
+}
+.createA{
+  border-radius: 3px;
+  padding: 0.5em;
+  margin-left: 1rem;
+  border: 1px solid white;
+color: white;
+} 
+.nav-wrap{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 1rem 3rem;
+}
+.logo{
+    background-color: white;
+    border: 0.5px solid var(--clr-boder-logo);
+    display:flex;
+    border-radius: 50%;
+    text-align: center;
+    color: red;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    padding-top: 13px;
+    font-size: 100px;
+    font-weight:500;
+   
+}
+.logo p{
+    padding: 0.1em 0.4em;
+    font-size: 2.625rem;
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-accent-1);
+}
+@media (min-width:50em) {
+    .logo p{
+        font-size: 4.375rem;
+        }
+    }
+.location-search{
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+/*.nav-search{
+  width: 100%;
+  display: grid;
+  /* grid-template-columns:1fr; */
+  
+  /* align-items: center;
+  justify-content: center;
+} */
+/* @media (min-width: 600px) {
+  .nav-search{
+    height: 40px;
+    width: 310px;
+    color: gray;
+    border: none;
+    float: left;
+     opacity: 0.7;
+    }
+} */
+
+
+/*@media (max-width: 1150px){
+.nav-search {
+  
+    border-radius: 0px;
+    font-size: 15px;
+   
+    margin-right: 21px;
+    margin-bottom: 25px;
+}
+}
+
+.search-option{
+   width: 100%;
+   height: 50px;
+   align-items: center;
+   justify-content:center;
+   justify-content: space-evenly;
+   display: flex;
+   gap: 25px;
+   position: absolute !important;
+    left: 275px;
+    margin: 2% 0px;
+    }
+    
+
+
+
+.form-select{
+display: flex;
+border-radius: 4px;
+height: 35px;
+width: 160px;
+color: gray;
+ border: none;
+ text-align: center;
+ font-size: 0.7rem;
+font-weight: 800;
+cursor: pointer; 
+}*/
+.locationSelector {
+     /* position: relative; */
+    top: -238px;
+     margin-left: 27.5%;
+     margin-right: 20%;
+     text-align: center;
+     justify-content: center;
+display: flex;
+flex-direction: row;
+display: inline-flex;
+
+    }
+    
+     .locationDropdown {
+         height: 40px;
+         width: 350px;
+         color: gray;
+            border: none;
+        border-radius: 0px;
+        font-size: 15px;
+         opacity: 0.7;
+         margin-top: 25px;
+          margin-right: 21px;
+        margin-bottom: 25px;
+        float: left;
+       
+       
+        }
+
+.container{
+    
+}
+
+
+
+
+
+        .restaurantsinput {
+
+            height: 40px;
+            width: 310px;
+            color: gray;
+               border: none;
+           border-radius: 0px;
+           font-size: 15px;
+            opacity: 0.7;
+             margin-right: 21px;
+           margin-bottom: 25px;
+           float: left;
+           background-color: white;
+         /* height: 40px;
+         width: 310px;
+         color: gray;
+        border: none;
+         border-radius: 0px;
+         font-size: 15px;
+         opacity: 0.7;
+         float: left;
+        padding-left: 30px;
+        margin-right: 21px;
+        margin-bottom: px; */
+        }
+    .search {
+    position: absolute !important;
+     left: 150px;
+    margin: 2% 0px;
+    }
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    padding: 28px;
+    width: 30%;
+    height: 30%;
+    margin-right: 80%;
+    }
+  
+/*remaining part*/
+.supper{
+    width:80%;
+    margin:auto;
+    padding-top:32px;
+}
+.supper-title{
+    color:#070726;
+    font-size:30px;
+    font-weight: 600;
+}
+.supper-sub-title{
+    color: gray;
+}
+.supper-list{
+    margin-top:36px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.supper-list-item{
+    display: flex;
+    flex-wrap: nowrap;
+    border:1px solid black;
+    width:31%;
+    height: 23vh;
+    margin-bottom:16px;
+    box-shadow: 0px 0px 5px gray;
+}
+.supper-list-item-image{
+    width:65%;
+    background-size:cover;
+
+}
+.supper-list-item-content{
+    padding:24px;
+    background-color: white;
+}
+.supper-list-item-content-title{
+color: #070726;
+font-size: 21px;
+}
+.supper-list-item-content-subtitle{
+    font-size: 20px;
+    color: gray;
+}
+
